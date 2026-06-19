@@ -2,10 +2,19 @@
   --bg:#04070d; --bg2:#081320; --surface:rgba(10,18,30,.78); --surface2:rgba(14,26,40,.85);
   --border:rgba(120,244,255,.16); --border-hot:rgba(120,244,255,.5);
   --text:#eafcff; --muted:rgba(220,245,255,.6); --dim:rgba(220,245,255,.32);
-  --accent:#5ef0ff; --glow:rgba(94,240,255,.20); --gold:#ffd27a;
+  --accent:#5ef0ff; --glow:rgba(94,240,255,.20); --gold:#ffd27a; --strong:#ffffff;
   --serif:'Playfair Display',Georgia,serif; --body:'Inter',system-ui,sans-serif;
   --mono:'Space Mono','JetBrains Mono',Consolas,monospace; --radius:18px;
 }
+
+/* ☀ LIGHT MODE — MiMo-inspired warm paper + Xiaomi-orange accent */
+body.light{
+  --bg:#fbfaf7; --bg2:#f1ede6; --surface:rgba(255,255,255,.92); --surface2:rgba(255,255,255,.97);
+  --border:rgba(255,106,0,.25); --border-hot:rgba(255,106,0,.6);
+  --text:#201c17; --muted:rgba(50,42,33,.62); --dim:rgba(50,42,33,.36);
+  --accent:#ff6a00; --glow:rgba(255,106,0,.16); --gold:#c77b00; --strong:#16120d;
+}
+body.light .bg{opacity:.3;}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:100%;height:100%}
 body{
@@ -83,7 +92,7 @@ button:disabled{opacity:.5;cursor:wait;}
 .doc-view h3{font-family:var(--mono);color:var(--accent);font-size:.92em;
   margin:.6em 0 .35em;text-shadow:0 0 10px var(--glow);letter-spacing:.02em;}
 .doc-view p{margin:.5em 0;}
-.doc-view b{color:#fff;}
+.doc-view b{color:var(--strong);}
 .doc-view hr{border:none;border-top:1px solid var(--border);margin:1.1em 0;}
 .doc-view .draft-preview{margin-top:1.4em;padding-top:1.1em;border-top:1px dashed var(--border);
   color:var(--dim);font-family:var(--mono);font-size:.62em;white-space:pre-wrap;line-height:1.5;}

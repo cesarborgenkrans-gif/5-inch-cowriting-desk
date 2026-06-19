@@ -190,6 +190,13 @@ Type your text here...
     $('btn-feedback').textContent = `${MODES[mode].icon} Get ${MODES[mode].label.toLowerCase()} feedback`;
   }));
 
+  // ── theme (dark default / MiMo-inspired light) ──
+  const themeToggle = $('theme-toggle');
+  function applyTheme(t) { document.body.classList.toggle('light', t === 'light'); themeToggle.textContent = t === 'light' ? '🌙' : '☀'; }
+  let theme = localStorage.getItem('cowriting-theme') || 'dark';
+  applyTheme(theme);
+  themeToggle.addEventListener('click', () => { theme = theme === 'light' ? 'dark' : 'light'; localStorage.setItem('cowriting-theme', theme); applyTheme(theme); });
+
   // ── init ──
   applySettingsToFields();
   setActiveModeChip();
