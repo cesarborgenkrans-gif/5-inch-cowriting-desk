@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quill · Co-Writing Desk</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="brand">🪶 QUILL <span>// co-writing desk</span></div>
+      <div class="right">
+        <a class="credit-link" data-url="https://sparklesnap.dev">sparklesnap.dev</a>
+        <a class="credit-link" data-url="https://github.com/cesarborgenkrans-gif">github</a>
+        <span id="conn" class="conn checking" title="">◐ checking…</span>
+        <button id="gear" class="ghost" title="LLM settings">⚙ settings</button>
+      </div>
+    </header>
+
+    <div id="filebanner" class="filebanner" hidden></div>
+
+    <section id="settings" class="settings" hidden>
+      <label>LLM provider
+        <select id="cfg-provider">
+          <option value="lmstudio">LM Studio (local)</option>
+          <option value="ollama">Ollama (local)</option>
+          <option value="openrouter">OpenRouter (cloud)</option>
+          <option value="custom">Custom</option>
+        </select>
+      </label>
+      <label>LM Studio Base URL<input id="cfg-url" type="text" placeholder="http://localhost:1234/v1"></label>
+      <label>Model (optional)<input id="cfg-model" type="text" placeholder="(uses the loaded model)"></label>
+      <label>Temperature<input id="cfg-temp" type="number" min="0" max="2" step="0.1" value="0.4"></label>
+      <label>API Key (any, for local)<input id="cfg-key" type="text" placeholder="lm-studio"></label>
+      <div class="row-actions">
+        <button id="cfg-save" class="primary">Save &amp; test connection</button>
+        <span id="cfg-status" class="muted"></span>
+      </div>
+    </section>
+
+    <section class="display">
+      <div class="display-head">
+        <span>Shared document — top (AI replies surface here)</span>
+        <span id="doc-path" class="muted"></span>
+      </div>
+      <div class="doc-view" id="doc-view"></div>
+    </section>
+
+    <div class="modes" id="modes">
+      <button class="chip active" data-mode="tone">🪶 Tone</button>
+      <button class="chip" data-mode="clarity">🔍 Clarity</button>
+      <button class="chip" data-mode="audience">🎯 Audience</button>
+      <button class="chip" data-mode="warmth">💛 Encourage</button>
+    </div>
+
+    <footer class="actions">
+      <button id="btn-feedback" class="primary big">🪶 Get tone feedback</button>
+      <button id="btn-refresh" class="ghost">⟳ Refresh</button>
+      <button id="btn-opendoc" class="ghost" title="Open co-writing.md in your editor">📂 Open doc</button>
+      <button id="btn-openfolder" class="ghost" title="Open the app folder (where co-writing.md lives)">📁 Open folder</button>
+      <span id="status" class="status"></span>
+    </footer>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>

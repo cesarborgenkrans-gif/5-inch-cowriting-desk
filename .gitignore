@@ -1,0 +1,27 @@
+# dependencies
+node_modules/
+
+# machine-specific / personal — never publish
+displays-detected.json
+*.local
+*.local.*
+.env
+.env.*
+secrets.*
+*.key
+*.pem
+
+# logs / caches / OS cruft
+*.log
+__pycache__/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# editor
+.vscode/
+.idea/
+*.swp
+
+# NOTE: co-writing.md is intentionally tracked (cleaned + shipped, alongside
+# co-writing.example.md). The app rewrites it at runtime — commit changes only if you want to.

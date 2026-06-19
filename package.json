@@ -1,0 +1,13 @@
+{
+  "name": "co-writing-llm",
+  "version": "0.1.0",
+  "description": "Co-writing dashboard — on-demand local-LLM tone feedback on a shared markdown doc (1440x2560 portrait panel)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --windowed"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0"
+  }
+}
