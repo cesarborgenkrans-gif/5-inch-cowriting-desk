@@ -2,8 +2,6 @@
  /\_/\
 ( o.o )   * QUILL *
  > ^ <    a co-writing desk that notes your margins
-(  🪶 )
- \___/
 ```
 
 # 🪶 Quill — Co-Writing Desk
@@ -90,11 +88,8 @@ and identity are **not** covered by MIT and remain © Cesar Borgenkrans.
 ---
 
 ```text
- /\_/\
-( ^.^ )   thanks for visiting~
- > ^ <    may your drafts find their kindest note
-(  🪶 )
- \___/
+thanks for visiting~ 🪶
+may your drafts find their kindest note
 ```
 
 Section mascots in the spirit of
