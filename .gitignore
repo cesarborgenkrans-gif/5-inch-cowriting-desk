@@ -1,7 +1,7 @@
 # dependencies
 node_modules/
 
-# machine-specific / personal — never publish
+# machine-specific / personal - never publish
 displays-detected.json
 *.local
 *.local.*
@@ -14,6 +14,7 @@ secrets.*
 # logs / caches / OS cruft
 *.log
 __pycache__/
+*.pyc
 .DS_Store
 Thumbs.db
 desktop.ini
@@ -23,5 +24,5 @@ desktop.ini
 .idea/
 *.swp
 
-# NOTE: co-writing.md is intentionally tracked (cleaned + shipped, alongside
-# co-writing.example.md). The app rewrites it at runtime — commit changes only if you want to.
+# co-writing.md is intentionally tracked as a clean starter document.
+# The app rewrites it at runtime; commit changes only when you intend to publish them.

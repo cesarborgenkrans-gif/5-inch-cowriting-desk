@@ -7,7 +7,7 @@
   --mono:'Space Mono','JetBrains Mono',Consolas,monospace; --radius:18px;
 }
 
-/* ☀ LIGHT MODE — MiMo-inspired warm paper + Xiaomi-orange accent */
+/* LIGHT MODE - warm paper + orange accent */
 body.light{
   --bg:#fbfaf7; --bg2:#f1ede6; --surface:rgba(255,255,255,.92); --surface2:rgba(255,255,255,.97);
   --border:rgba(255,106,0,.25); --border-hot:rgba(255,106,0,.6);
@@ -25,11 +25,11 @@ body{
   background:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);
   background-size:48px 48px;mask-image:radial-gradient(circle at 50% 40%,#000,transparent 86%);}
 
-/* fluid full-bleed — fills the 1440x2560 portrait panel */
+/* fluid full-bleed - fills the 1440x2560 portrait panel */
 .wrap{position:fixed;inset:0;display:flex;flex-direction:column;
   padding:clamp(20px,3.4vmin,56px);gap:clamp(12px,1.8vmin,24px);}
 
-/* "CO-WRITING" brand is decoration — left at its original size */
+/* "CO-WRITING" brand is decoration - left at its original size */
 .topbar{display:flex;justify-content:space-between;align-items:center;gap:10px 14px;flex-wrap:wrap;
   border-bottom:1px solid var(--border);padding-bottom:16px;}
 .brand{font-family:var(--mono);font-weight:700;letter-spacing:.12em;white-space:nowrap;flex-shrink:0;
@@ -63,7 +63,7 @@ button:disabled{opacity:.5;cursor:wait;}
 .filebanner[hidden]{display:none;}
 .filebanner code{color:#fff;background:rgba(0,0,0,.35);padding:1px 6px;border-radius:5px;}
 
-/* SETTINGS — upsized text, tighter padding (no wasted gray) */
+/* SETTINGS - upsized text, tighter padding */
 .settings{display:grid;grid-template-columns:1fr 1fr;gap:9px;
   background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;}
 .settings[hidden]{display:none;}
@@ -79,7 +79,7 @@ button:disabled{opacity:.5;cursor:wait;}
 .settings select option:checked{background:#10324a;color:#fff;}
 .settings .row-actions{grid-column:1/-1;display:flex;align-items:center;gap:14px;}
 
-/* the display — fills remaining height */
+/* the display - fills remaining height */
 .display{flex:1;min-height:0;display:flex;flex-direction:column;
   background:var(--surface);border:1px solid var(--border);border-left:5px solid var(--accent);
   border-radius:var(--radius);overflow:hidden;box-shadow:inset 0 0 120px rgba(0,0,0,.4);}
@@ -87,7 +87,7 @@ button:disabled{opacity:.5;cursor:wait;}
   font-family:var(--mono);font-size:.9rem;letter-spacing:.12em;color:var(--gold);
   text-transform:uppercase;padding:16px 24px;border-bottom:1px dashed var(--border);}
 
-/* IMPORTANT TEXT — the feedback / draft — 3x for the small panel */
+/* IMPORTANT TEXT - feedback / draft - 3x for the small panel */
 .doc-view{flex:1;overflow-y:auto;padding:28px 32px;font-size:clamp(3rem,4.5vw,4.35rem);line-height:1.5;}
 .doc-view h3{font-family:var(--mono);color:var(--accent);font-size:.92em;
   margin:.6em 0 .35em;text-shadow:0 0 10px var(--glow);letter-spacing:.02em;}
@@ -100,14 +100,14 @@ button:disabled{opacity:.5;cursor:wait;}
 .doc-view::-webkit-scrollbar{width:8px;}
 .doc-view::-webkit-scrollbar-thumb{background:var(--border-hot);border-radius:99px;}
 
-/* MODE CHIPS — 2x */
+/* MODE CHIPS - 2x */
 .modes{display:flex;gap:14px;flex-wrap:wrap;}
 .chip{background:rgba(255,255,255,.03);border:1px solid var(--border);color:var(--muted);
   padding:20px 34px;font-size:1.6rem;letter-spacing:.03em;border-radius:14px;}
 .chip:hover{border-color:var(--border-hot);color:var(--text);}
 .chip.active{background:var(--glow);border-color:var(--border-hot);color:var(--text);box-shadow:0 0 14px var(--glow);}
 
-/* ACTION ROW — feedback + refresh + open doc/folder + status */
+/* ACTION ROW - feedback + refresh + open doc/folder + status */
 .actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
 .primary.big{font-size:clamp(1.5rem,2.6vw,2.15rem);padding:24px 30px;letter-spacing:.04em;}
 .actions .ghost{font-size:1.35rem;padding:18px 22px;white-space:nowrap;}

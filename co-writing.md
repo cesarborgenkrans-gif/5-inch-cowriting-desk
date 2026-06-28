@@ -1,13 +1,15 @@
-<!-- ============================================================
-     CO-WRITING DOC
-     • The AI writes its tone feedback ABOVE the divider (newest at the top).
-     • You write your draft BELOW the divider.
-     • The dashboard shows the TOP of this file, so the AI's latest reply
-       always has display precedence. Push "Get tone feedback" to ask.
-     ============================================================ -->
+<!--
+CO-WRITING DOC
 
-<!-- ✂️ DRAFT BELOW — the AI never edits below this line ✂️ -->
+- Quill writes feedback ABOVE the divider, newest first.
+- You write your draft BELOW the divider.
+- The dashboard shows the top of this file, so the latest feedback has display priority.
+-->
+
+No feedback yet. Write your draft below the divider, then press the feedback button in Quill.
+
+<!-- DRAFT BELOW - the AI never edits below this line -->
 
 # My draft
 
-...
+Type your text here.
